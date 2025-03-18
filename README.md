@@ -1,45 +1,36 @@
-Weather Data Analyzer
+# Weather Data Analyzer
 
-Overview
+## Overview
+This Java application reads weather data from a CSV file and provides analytical features, leveraging modern Java features such as:
+- **Records** for data representation
+- **Enhanced switch statements** for temperature categorization
+- **Lambdas & Streams** for efficient data processing
+- **Text Blocks** for formatted output
+- **Pattern Matching**
 
-The Weather Data Analyzer is a Java-based application designed to process and analyze weather data efficiently using modern Java features (Java 15-23). It utilizes functional programming concepts, records, enhanced switch statements, and text blocks to ensure concise and readable code.
+## Features
+- Parse weather data (temperature, humidity, precipitation) from a CSV file
+- Compute the **average temperature** for a specific **month**
+- Identify **days** where the temperature exceeds a given **threshold**
+- Count the **number of rainy days**
+- Categorize weather conditions as **Hot, Warm, or Cold** using an enhanced switch
 
-Features
+## Prerequisites
+- Java 21 or later
+- IntelliJ IDEA or any preferred IDE
 
-Parses weather data from a CSV file.
+## Example CSV Data
+```
+Date,Temperature,Humidity,Precipitation
+2023-08-01,32.5,65,0.0
+2023-08-02,35.0,60,0.2
+```
 
-Computes the average temperature for a specific month.
-
-Identifies days with temperatures exceeding a given threshold.
-
-Counts the number of rainy days.
-
-Uses an enhanced switch statement for weather categorization.
-
-Implements Java Streams and Lambdas for efficient data processing.
-
-Provides clean, markdown-supported Javadoc documentation.
-
-Technologies Used
-
-Java 23 (Preview features enabled)
-
-Java Records for structured data representation
-
-Text Blocks for structured output
-
-Enhanced Switch Statements
-
-Pattern Matching
-
-Functional Programming with Streams & Lambdas
-
-Prerequisites
-
-Ensure you have the following installed:
-
-Java 23 or later (--enable-preview flag required for compilation and execution)
-
-IntelliJ IDEA or another Java IDE
-
-Maven (for build management)
+## Example Output
+```
+Weather Data Analysis
+---------------------
+Average Temperature (August): 33.75
+Hot Days (>30°C): [2023-08-01, 2023-08-02]
+Rainy Days: 1
+```
